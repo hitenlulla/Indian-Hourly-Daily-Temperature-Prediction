@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	Weather-App
+{% endblock %} 
+{% block content %}
+
+
+<div class="main">
+	<div class="top">
+		<div class="location">
+			<i class="fas fa-map-marker-alt"></i>
+			{{ city }}, {{ state }}
+		</div>
+	</div>
+	<div class="bottom">
+		{% for key, value in latest_data.items %}
+			<div class="current">
+				<div class="left-split">
+					<div class="temperature">{{ value.temperature }}&#176;</div>
+					<div class="day">{{ value.day }}
+						<div class="time">{{ value.time }}</div>
+					</div>			
+				</div>
+				<div class="right-split">
+					<!-- <div class="logo">
+						<i class= "{{ value.icon }}"></i>
+					</div> -->
+				</div>
+			{% endfor %}
+		</div>
+		<div class="forecasted">
+			<h4 class="hourly-prediction-heading">Hourly Prediction:</h4>
+			<div class="hourly-forecasting">
+				{% for key, value in hourly_prediction.items %}
+				<div class="forecasting">
+					<div class="temp-icon-group">
+						<div class="temperature">
+							{{ value.temperature }}&#176;
+						</div>
+						<!-- <div class="logo">
+							<i class= "{{ value.icon }}"></i>
+						</div> -->
+					</div>
+					<div class="day">{{ value.day }}
+						<div class="time">{{ value.time }}</div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+			<h4 class="daily-prediction-heading">Daily Prediction:</h4>
+			<div class="daily-forecasting">
+				{% for key, value in daily_prediction.items %}
+				<div class="forecasting">
+					<div class="temp-icon-group">
+						<div class="temperature">
+							{{ value.min_temperature }}&#176; / {{ value.max_temperature }}&#176;
+						</div>
+					</div>
+					<div class="forecasted-days">{{ key }}
+					</div>
+				</div>
+			{% endfor %}
+			</div>	
+		</div>
+	</div>
+</div>
+
+{% endblock %}

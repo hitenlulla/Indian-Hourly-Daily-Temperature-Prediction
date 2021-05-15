@@ -1,0 +1,445 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	/* background: #000046;  */
+	/* background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+background: linear-gradient(to right, #1CB5E0, #000046); */
+	width: 100%;
+	background-size: 100% 100%;
+	background-position: 0;
+	background-repeat: no-repeat;
+	/* height: 100vh; */
+	position: relative;
+}
+
+.body {
+	height: 100%;
+	background-image: url(../images/landing.jpg);
+}
+
+.content{
+	overflow-y: hidden;
+	/* margin-top: -1rem; */
+	/* height: 100vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-image: url(../images/mumbai-bg.jpg); */
+background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	background-position: center;
+	background-size: 100% 100%;
+	background-position: 0;
+	background-repeat: no-repeat;
+	/* overflow-y: none; */
+}
+
+.nav {
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+	padding: 1.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+}
+
+.nav i {
+	font-size: 3.5rem;
+}
+
+.nav-right {
+	margin-right: 15rem;
+}
+
+.search-form{
+	display: inline;
+	position: relative;
+	margin-right: 1rem;
+}
+
+.search-btn{
+	position: absolute;
+    top: -12px;
+    right: 14px;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+.search-btn i{
+	font-size: 2.8rem;
+	background-color: transparent;
+}
+.nav-left {
+	margin-left: 15rem;
+}
+.nav a {
+	text-decoration: none;
+	font-size: 2rem;
+	color: inherit;
+	padding: 0 20px;
+}
+
+.nav a:last-of-type {
+	padding: 0 10px 0 20px;
+}
+
+h1 {
+	margin: 1rem 0;
+	font-size: 50px;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	background-color: #000;
+	padding: 15px;
+	border-radius: 50px;
+	color: white;
+}
+
+.btn {
+	padding: 10px 25px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 20px;
+	outline: none;
+}
+
+.container,
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	margin-top: auto;
+	height: 100vh;
+}
+.form {
+	padding: 4rem 15rem;
+	box-shadow: 0 8px 32px 0 rgba(32, 33, 48, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(15px);
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+input {
+	margin-top: 1rem;
+	font-size: 2rem;
+	border-radius: 20px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	outline: none;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	padding: 4rem 9rem;
+	max-width: 1400px;
+	border-radius: 20px;
+	margin-top: 8rem;
+}
+
+.top {
+	background-image: url(../images/India-bg.jpg);
+	width: 100%;
+	background-size: 100% 100%;
+	background-position: 0;
+	background-repeat: no-repeat;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 16px 32px 0 rgba(32, 33, 48, 0.37);
+}
+
+.top .location {
+	font-size: 4rem;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	position: absolute;
+	padding:1rem;
+	left: 1.5rem;
+	bottom: 1.5rem;
+	color: #fff;
+	letter-spacing: 2px;
+	box-shadow: 0 16px 32px 0 rgba(32, 33, 48, 0.37);
+	border-radius: 20px;
+	background-color: rgba(36, 36, 36, 0.801);
+}
+
+.bottom {
+	padding: 3rem 0;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 8px 32px 0 rgba(32, 33, 48, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(15px);
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 0 0 20px 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hourly-prediction-heading{
+	align-self: flex-start;
+	position: absolute;
+	left: 20%;
+	top: 15px;
+	border-bottom: 2px solid #000;
+}
+
+.daily-prediction-heading{
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	border-bottom: 2px solid #000;
+}
+
+.current {
+	margin-right: 4rem;
+	padding: 0 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid #000;
+}
+
+.current .left-split{
+	margin-right: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.current .right-split .logo{
+	font-size: 9rem;
+}
+
+.current .day {
+	font-size: 2rem;
+	font-weight: normal;
+	padding: .3rem 2rem;
+	background-color: rgba(128, 128, 128, 0.65);
+	border-radius: 20px;
+	color:white;
+	text-align: center;
+	
+}
+
+.current .day .time{
+	font-size: 1.5rem;
+}
+
+.current .temperature {
+	display: flex;
+	font-size: 7rem;
+}
+
+.bottom .daily-forecasting,
+.bottom .hourly-forecasting {
+	display: flex;
+	padding-right: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	/* padding: 2rem; */
+}
+
+.bottom .daily-forecasting{
+	margin-top: 3.5rem;
+}
+.forecasting {
+	font-size: 2.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.forecasting .day{
+	font-size: 1.7rem;
+	padding: .5rem 1.5rem;
+	margin: .5rem 0;
+	background-color: rgba(128, 128, 128, 0.65);
+	border-radius: 20px;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.forecasted-days{
+	font-size: 1.7rem;
+	padding: .8rem 1.5rem;
+	margin: .5rem 0;
+	background-color: rgba(128, 128, 128, 0.65);
+	border-radius: 20px;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.logo{
+	margin: .8rem 0;
+}
+
+.fa-sun{
+	color: rgb(233, 209, 101);
+	text-shadow:0px 2px 10px rgb(233, 209, 101);
+}
+
+.fa-cloud{
+	color: rgb(120, 200, 246);
+	text-shadow:0px 2px 10px rgb(120, 200, 246);
+}
+
+.fa-wind{
+	color: rgb(133, 133, 133);
+	text-shadow:0px 2px 10px rgb(133, 133, 133);
+}
+
+.fa-cloud-showers-heavy{
+	color: blue;
+	text-shadow:0px 2px 10px blue;
+}
+
+.fa-snowflake{
+	color: whitesmoke;
+	text-shadow:0px 2px 10px rgb(0, 0, 0)
+}
+
+.stats{
+	background-image: url(../images/landing.jpg);
+	width: 70%;
+	margin: 15rem auto 5rem;
+	margin-top: 15rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0rem;
+	box-shadow: 0 8px 32px 0 rgba(32, 33, 48, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(15px);
+	background: rgb(0, 0, 0);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: white;
+}
+
+.model-selection-title,
+.stat-val-title,
+.graph-title{
+	/* color: black; */
+	margin-top: 4rem;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 2rem;
+	font-size: 4.5rem;
+}
+
+.model-selection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.img-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.img-container > img{
+	margin-right: 4rem;
+}
+.model-values{
+	display: flex;
+	font-size: 1.7rem;
+}
+
+.model-values > div{
+	margin:5rem;
+}
+.model-values > div > h2{
+	text-decoration: underline;
+}
+
+.model-values > div > div{
+	margin-top: 1rem;
+}
+
+.model-values > div > div > span{
+	font-weight: bold;
+}
+
+.statistical-values{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.statistical-values > div > div{
+	margin-bottom: 1rem;
+}
+
+.statistical-values > div > div > span {
+	font-weight: bold;
+}
+
+.graphical-representation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.graphical-representation > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.graphical-representation > div > h2{
+	margin: 2rem 0 4rem;
+	font-size: 2rem;
+}
+
+.graphical-representation > div > img{
+	width: 90%;
+	margin-bottom: 3rem;
+}

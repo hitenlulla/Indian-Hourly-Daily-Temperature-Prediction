@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	Weather-App
+{% endblock %} 
+{% block stats %}
+
+<section class="ML-stats">
+    <h1 class="model-selection-title">Model Selection:</h1>
+    <div class="model-selection">
+        <div class="img-container">
+            <img src="{% static 'images/algo_comparission.png' %}" alt="">
+            <img src="{% static 'images/algo_accuracy.png' %}" alt="">
+        </div>
+        <div class="model-values">
+            <div >
+                <h2>Linear Regression</h2>
+                <div>Model Accuracy :<span> 96.1312 %</span></div>
+                <div>Standard Deviation:<span> 0.009809</span></div>
+            </div>
+            <div>
+                <h2>K Nearest Neighbours</h2>
+                <div>Model Accuracy :<span> 95.1194 %</span></div>
+                <div>Standard Deviation:<span> 0.009121</span></div>
+            </div>
+            <div>
+                <h2>Random Forest</h2>
+                <div>Model Accuracy :<span> 96.1613 %</span></div>
+                <div>Standard Deviation:<span> 0.009155</span></div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="stat-val-title">Statistical Values</h1>
+    <div class="statistical-values">
+        <div>
+            <div class="val">Variance:<span> 0.7601</span></div>
+            <div class="val">R Squared:<span> 0.7601</span></div>
+            <div class="val">Mean Square Log Error:<span> 0.0163</span></div>
+            <div class="val">Mean Absolute Error:<span> 0.5289</span></div>
+            <div class="val">Mean Square Error:<span> 1.5005</span></div>
+            <div class="val">Root Mean Square Error:<span> 1.2249</span></div>
+        </div>
+    </div>
+
+    <h1 class="graph-title">Graphical Representations</h1>
+    <div class="graphical-representation">
+        <div class="training-set-graph">
+            <h2>1. Graphical Representation of Actual Values and Predicted Values in Training Set</h2>
+            <img src="{% static 'images/training_set_graph.png' %}" alt="">
+        </div>
+        <div class="test-set-graph">
+            <h2>2. Graphical Representation of Actual Values and Predicted Values in Test Set</h2>
+            <img src="{% static 'images/test_set_graph.png' %}" alt="">
+        </div>
+    </div>
+
+</section>
+{% endblock %}
